@@ -41,7 +41,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
 
-Poroyecto requerido en BootCamp JS FullStack.
+Poroyecto requerido en BootCamp JS FullStack. Desarrollado Off Line
 
 Requerimientos:
 ### Hito 1
