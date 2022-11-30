@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="theme-color" content="#000000">
+  <meta name="keywords" content="Covid Mundial Local Estadísticas">
+  <meta name="vieport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicio Información Covid">
+  <meta name="author" content="Grupo 1 Módulo 4">
+  <title>Estadìsticas Covid</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicovid.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Fuentes de Google font montserrat 100 y 500, Open Sans 300 y 500 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@200&family=Montserrat:wght@100;500&family=Open+Sans:wght@300;500&family=Ubuntu:wght@300&family=Walter+Turncoat&display=swap"
+    rel="stylesheet">
+  <!-- Iconos Font wesome </script> -->
+  <script src="https://kit.fontawesome.com/028cd863b1.js" crossorigin="anonymous"></script>
+  <script type="module" src="./assets/js/jsApi.js"></script>
+  <script type="module" src="./assets/js/tabla.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar bg">
+    <a class="navbar-brand" href="./"> <img src="assets/img/favicovid.png" alt="favicovid" width="35" height="35"
+        class="d-inline-block align-text-top"> COVID-19</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarToggler02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler02">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " href="./">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./usah1.html">USA</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h1 class="titulo1">Situacion Mundial Del COVID-19</h1>
+  </header>
+  <section>
+    <div class="card bg-dark text-white">
+      <img id="imagen1" src="assets/img/covid3.jpg" class="card-img" alt="imagencovid">
+      <div class="card-img-overlay">
+        <h4 class="card-text">Los coronavirus (CoV) son una amplia familia de virus que pueden causar diversas
+          afecciones</h4>
+        <h4 class="card-text">En diciembre del 2019 en Whuan (China), se notificó un brote de causa viral, por un virus
+          de tipo coronavirus que previamente no se había identificado en el ser humano. Ha este nuevo coronavirus, se
+          le conoce actualmente con el nombre de COVID-19</h4>
+        <h4 class="card-text">Los síntomas de este nuevo coronavirus son diversos abarcando gran número de sistemas,
+          describiéndose además una severidad que va desde casos asintomáticos, hasta la muerte.</h4>
+        <h4 class="card-text">La epidemia de COVID-19 fue declarada por la OMS una emergencia de salud
+          pública de preocupación internacional el 30 de enero de 2020.Desde entonces se realizan
+          esfuerzos en todos los países, para intentar controlar esta enfermedad.
+          La situación Mundial y nacional del COVID-19, cambia frecuentemente, por ello en esta página se
+          despliega información de la situación Mundial del COVID-19</h4>
+      </div>
+    </div>
+  </section>
+  <section id="graficoDiv" style="width: 100%;height: 950px;" class="container pt-5">
+  </section>
+  <section id="prueba">
+  </section>
+  </div>
+  <div id="graficaMundial"></div>
+  <div class="col-md-12" id="tablaPaises">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Pais</th>
+          <th scope="col">Muertes</th>
+          <th scope="col">Recuperados</th>
+          <th scope="col">activos</th>
+          <th scope="col">confirmados</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpoTabla">
+      </tbody>
+    </table>
+  </div>
+  <div id="modall">
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div id="modalDetalle" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Tras haber leido el doc html -->
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--Canva JS - Charts-->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+  <!-- Se lee despues de haber leido jQuery, Popper.js, Bootstrap JS. Viene el script del proyecto -->
+</body>
+
+</html>

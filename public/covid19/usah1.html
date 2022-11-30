@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Situacion de USA</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/img/faviusa.webp" type="image/x-icon">
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav id="nav" class="navbar navbar-expand-lg navbar">
+    <a class="navbar-brand" href="./"> <img src="assets/img/faviusa.webp" alt="favicovid" width="35" height="35"
+        class="d-inline-block align-text-top"> COVID-19</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarToggler02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler02">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " href="./">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">USA</a>
+        </li>
+      </ul>
+      <button id="csesion" style="display: none;" class="btn btn-primary btn-sm">Cerrar sesión</button>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1 id="titulo1" class="titulo1">Situacion de USA</h1>
+  </header>
+  <div class="card mb-3">
+    <img src="./assets/img/imagen1.jpg" class="card-img-top" alt="imagen1" id="imgindex1">
+    <div class="card-body">
+      <h5 class="card-title" id="indextitulo2">Informacion del COVID-19 en US del 2020-2021</h5>
+    </div>
+  </div>
+  <h3 class="titulo2">Formulario de Identificacion</h3>
+  <div class="container mb-5">
+    <form id="formulario">
+      <div class="form-group">
+        <label for="exampleInputEmail1" id="emailpasswordtext">Ingrese su correo electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Ingrese  aqui correo electronico">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" id="emailpasswordtext">Ingrese su contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingrese aqui su contraseña">
+      </div>
+      <button type="submit" class="btn btn-primary ">Iniciar Sesion</button>
+    </form>
+  </div>
+  <div class="col-12" id="GraficoUSA" style="height:800px"></div>
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--Canva JS - Charts-->
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+  <!-- Se lee despues de haber leido jQuery, Popper.js, Bootstrap JS. Viene el script del proyecto -->
+  <script type="module" src="./assets/js/dataUSA.js"></script>
+</body>
+
+</html>
